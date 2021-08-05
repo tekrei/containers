@@ -4,4 +4,4 @@ This repository contains Docker container scripts and files to run various servi
 
 ## Scripts
 
-Bash scripts running services are available at [scripts](./scripts) folder.
+Container scripts to run various services are available at [scripts](./scripts) folder.
