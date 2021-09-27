@@ -1,6 +1,6 @@
 # Docker Containers
 
-This repository contains Docker container scripts and files to run various services.
+This repository contains scripts and files to run various services as Docker containers.
 
 ## Scripts
 
