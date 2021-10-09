@@ -2,7 +2,7 @@
 
 CONTAINER_PORT="${1:-8787}"
 
-docker run \
+docker run --rm \
     -e ROOT=TRUE \
     -e DISABLE_AUTH=true \
     -v $(pwd):/home/rstudio/work/ \
