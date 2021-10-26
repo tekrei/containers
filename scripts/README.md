@@ -7,13 +7,14 @@ environment variables before running them for deployment and check their volumes
 
 ## Container scripts
 
-- [start-neo4j.sh](./start-neo4j.sh): to start a [Neo4j](https://www.neo4j.com) container (<https://hub.docker.com/_/neo4j>)
-- [start-postgres.sh](./start-postgres.sh): to start a [PostgreSQL](https://www.postgresql.org/) container (<https://hub.docker.com/_/postgres>)
-- [start-rabbitmq.sh](./start-rabbitmq.sh): to start a [RabbitMQ](https://www.rabbitmq.com/) container (<https://hub.docker.com/_/rabbitmq>)
-- [start-portainer.sh](./start-portainer.sh): to start a community edition [Portainer](https://www.portainer.io/) container (<https://registry.hub.docker.com/r/portainer/portainer-ce/>)
+- [start-cloudbeaver.sh](./start-cloudbeaver.sh): to start a [Cloudbeaver](https://github.com/dbeaver/cloudbeaver) container (<https://hub.docker.com/r/dbeaver/cloudbeaver>)
 - [start-ds-notebook.sh](./start-ds-notebook.sh): to start a [Data Science Jupyter Notebook Server](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-datascience-notebook) container (<https://hub.docker.com/r/jupyter/datascience-notebook>)
-- [start-tf-notebook.sh](./start-tf-notebook.sh): to start a [TensorFlow Jupyter Notebook Server](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-tensorflow-notebook) container (<https://hub.docker.com/r/jupyter/tensorflow-notebook>)
+- [start-neo4j.sh](./start-neo4j.sh): to start a [Neo4j](https://www.neo4j.com) container (<https://hub.docker.com/_/neo4j>)
+- [start-rabbitmq.sh](./start-rabbitmq.sh): to start a [RabbitMQ](https://www.rabbitmq.com/) container (<https://hub.docker.com/_/rabbitmq>)
 - [start-r-studio.sh](./start-r-studio.sh): to start a [R Studio](https://github.com/rocker-org/rocker) container (<https://hub.docker.com/r/rocker/rstudio>)
+- [start-portainer.sh](./start-portainer.sh): to start a community edition [Portainer](https://www.portainer.io/) container (<https://registry.hub.docker.com/r/portainer/portainer-ce/>)
+- [start-postgres.sh](./start-postgres.sh): to start a [PostgreSQL](https://www.postgresql.org/) container (<https://hub.docker.com/_/postgres>)
+- [start-tf-notebook.sh](./start-tf-notebook.sh): to start a [TensorFlow Jupyter Notebook Server](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#jupyter-tensorflow-notebook) container (<https://hub.docker.com/r/jupyter/tensorflow-notebook>)
 
 ## Helper scripts
 

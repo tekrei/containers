@@ -18,7 +18,7 @@ CONTAINER_NAME=neo4j-${CONTAINER_LABEL}
 # It is also possible to define the following in a apoc.conf file and bind it as a volume: ./conf/apoc.conf:/var/lib/neo4j/conf/apoc.conf
 # --------------------------------------------
 # https://hub.docker.com/_/neo4j
-docker run --pull=always -d --restart unless-stopped --name ${CONTAINER_NAME} \
+docker run --pull always -d --restart unless-stopped --name ${CONTAINER_NAME} \
     -v /var/opt/neo4j-${CONTAINER_LABEL}/data:/data \
     -v /var/opt/neo4j-${CONTAINER_LABEL}/logs:/logs \
     -v /var/opt/neo4j-${CONTAINER_LABEL}/import:/var/lib/neo4j/import \

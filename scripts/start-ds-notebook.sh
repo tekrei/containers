@@ -2,7 +2,7 @@
 
 CONTAINER_PORT="${1:-8888}"
 
-docker run --pull=always --rm \
+docker run --pull always -ti --rm \
     -e JUPYTER_ENABLE_LAB=yes \
     -e GRANT_SUDO=yes \
     -v $(pwd):/home/jovyan/work/ \
