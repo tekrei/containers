@@ -12,4 +12,4 @@ docker run --pull always -d --restart unless-stopped --name ${CONTAINER_NAME} \
     --health-interval=15s --health-timeout=30s \
     -p ${WEB_PORT}:15672 -p ${CONTAINER_PORT}:5672 rabbitmq:management-alpine
 
-echo "Started RabbitMQ container ${CONTAINER_NAME}"
+echo "Started RabbitMQ container ${CONTAINER_NAME} at http://localhost:${WEB_PORT}"
