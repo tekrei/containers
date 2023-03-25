@@ -6,7 +6,7 @@ CONTAINER_NAME=postgres-${CONTAINER_LABEL}
 
 # default user is postgres, if you want to change provide it with POSTGRES_USER
 # initial database name is provided as POSTGRES_DB environment variable, if not provided it will use postgres default database
-# data is persisted to the /var/opt/postgres-${CONTAINER_LABEL} folder in the host
+# data is persisted to the /var/opt/postgres/${CONTAINER_LABEL} folder in the host
 # https://hub.docker.com/_/postgres
 docker run --pull always -d --restart unless-stopped --name ${CONTAINER_NAME} \
     -e "POSTGRES_PASSWORD=postgres" \
