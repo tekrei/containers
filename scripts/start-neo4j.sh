@@ -35,7 +35,6 @@ docker run --pull always -d --restart unless-stopped --name ${CONTAINER_NAME} \
     -e apoc.http.timeout.connect=0  \
     -e apoc.http.timeout.read=0  \
     --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1" \
-    --health-interval=15s --health-timeout=30s \
     -p ${HTTP_PORT}:7474 -p ${BOLT_PORT}:7687 neo4j
 
 echo "Started Neo4j container ${CONTAINER_NAME} at http://localhost:${HTTP_PORT}"

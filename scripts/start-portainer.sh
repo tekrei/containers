@@ -12,7 +12,6 @@ docker run --pull always -d --restart unless-stopped --name ${CONTAINER_NAME} \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v /var/opt/portainer/${CONTAINER_LABEL}:/data \
     --health-cmd "wget --no-verbose --tries=1 --spider http://localhost:9000/api/status || exit 1" \
-    --health-interval=30s --health-timeout=30s \
     -p 8000:8000 -p ${CONTAINER_PORT}:9443 portainer/portainer-ce:alpine
 
 echo "Started Portainer container ${CONTAINER_NAME} at https://localhost:${CONTAINER_PORT}"

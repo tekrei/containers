@@ -12,7 +12,6 @@ docker run --pull always -d --restart unless-stopped --name ${CONTAINER_NAME} \
     -e "POSTGRES_PASSWORD=postgres" \
     -v /var/opt/postgres/${CONTAINER_LABEL}:/var/lib/postgresql/data \
     --health-cmd "pg_isready -U postgres || exit 1" \
-    --health-interval=15s --health-timeout=30s \
     -p ${CONTAINER_PORT}:5432 postgres:alpine
 
 echo "Started PostgreSQL container ${CONTAINER_NAME}"
